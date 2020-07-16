@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ABC Theatres - Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="cinema website">
+        <meta name="keywords" content="cinema, movies, theatre, 2019, trailer">
+        <meta name="author" content="Temi Owolabi, Santos Odigie">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/script.js"></script>
+        <link rel="shortcut icon" href="images/cinema1.2.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    </head>
+    <body>
+         
+             <div class="top">
+             <nav>
+                         <div class="logo">
+                <img src="images/logo.png" title="logo" alt="logo"/>
+            </div>
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="account.html"  class="active">Account</a></li>
+                                <li><a href="tickets.html">See A Movie</a></li>
+                                <li><a href="snacks.html">Snacks</a></li>
+                                <li><a href="events.html">Events</a></li>    
+                            </ul>
+            </nav>
+             </div>
+        
+          <center>
+        <div class="divider">
+            
+        </div>
+</center>
+        
+        <div class="cinemaSeats">
+            <center>
+            <h1 class="forLogin">Login</h1>
+            <p class="login">Login to access your account.</p></center>
+        </div>
+        
+ <div class="background">
+         <div class="loginbox">
+    <img src="images/avatar.png" class="avatar" alt="avatar"> 
+        <h6>Login Here</h6>
+        <form id="loginForm" action="index.html" onsubmit ="return validateForm()">
+            <fieldset>
+            <label for="fname">Username<span class="req"> *</span></label>
+            <input type = "text" id="fname" name="username" placeholder="Enter Username" required>
+            <label for="password">Password<span class="req"> *</span></label>
+            <input type="password" id="pass" name="password" placeholder="Enter Password" required>
+            <input type="submit" name="login" value="Login" onclick="validateForm();">&nbsp;&nbsp;
+            <input type ="reset" name = "reset" value="Reset" onclick="resetPage()"/>
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+            </fieldset>
+        </form>   
+       
+        
+    </div>
+         
+        </div>
+    
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    
+           <center>
+        <div class="divider">
+            
+        </div>
+</center>
+        
+                   <div class="socials">
+      <div class="contact-method">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:d00227197@student.dkit.ie"/><span>d00227197@student.dkit.ie</span></a>
+      </div>
+      <div class="contact-method">
+        <i class="fas fa-mobile-alt"></i>
+        <span>+111111111111</span>
+      </div>
+      <div class="contact-method">
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://goo.gl/maps/2QEsj2gEkADzW43G7"/><span>Balbriggan Cinema</span></a>
+      </div>
+    </div>
+
+       
+    </body>
+</html>

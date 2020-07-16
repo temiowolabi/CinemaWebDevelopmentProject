@@ -1,0 +1,2773 @@
+/*Code References
+
+1.Login Form: https://www.youtube.com/watch?v=OWNxUVnY3pg
+2.Contact Boxes: https://www.youtube.com/watch?v=OrEpB2POs2o&t=100s
+3.Back To Top: https://www.youtube.com/watch?v=Vef9bxTilCU
+4.Tabs Nav: https://www.youtube.com/watch?v=WrGSYnPGaAA
+5.Newsletter: https://www.youtube.com/watch?v=I7M3V5sBMQc&t=126s*/
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+nav .logo{
+    float: left;
+}
+
+nav .logo img{
+    height: 3em;
+    
+    margin-top: 1.5em;
+/*    transition: .5s;*/
+}
+
+nav ul{
+    float: right;
+    margin-right: 5em;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    line-height: 5em;
+    color: red;
+    padding: 0.3125em 1.25em;
+    font-family: 'Bowlby One SC', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+/*    transition: .5s;*/
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: #fff;
+    background: red;
+}
+
+
+body{
+  margin:0;  
+  padding: 0;
+  background:  black;
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}*/
+
+nav{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 6.25em;
+    padding: 0.625em 6.25em;
+    box-sizing: border-box;
+    transition: .5s;
+    
+}
+
+.forMovie{
+  background-color: blue;  
+  margin:1em;
+}
+
+/*header{
+    background-color: black;
+    margin:1em;
+}*/
+
+.top{
+    width: 80%;        
+    height: 5em;
+        
+}
+
+html{
+    background-color: black;
+    color: white;
+}
+
+
+/*#F70505*/
+
+/*Last Christmas*/
+.lastXmas img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+    padding-top: 6em;
+}
+
+#pForLastXmas{
+    float:right;
+    margin-right: -5em;
+    padding-top: 6em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForLastXmas2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 15em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+.lastXmas img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#infoForXmas{
+    font-family: Icon;
+    float:right;
+    margin-right: -1em;
+    padding-top: 9em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForXmas{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 9em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForXmas:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForXmas:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#xmasBlur{
+    filter: blur(0.5em);
+    background:url(../images/lastchristmas.jfif) no-repeat center center fixed;
+    margin:1em;
+}
+
+.description{
+    float:right;
+    margin-right: -3.5em;
+    padding-top: 11em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.synopsis{
+    float:right;
+    margin-left: 35em;
+    padding-top: -10em;
+    color: grey;
+}
+
+
+.starring1{
+    float:right;
+    margin-right: -22em;
+    padding-top: 11em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors1{
+    float:right;
+    margin-right: -56.3em;
+    padding-top: 23em;
+    color:grey;
+}
+
+.director1{
+    float:right;
+    margin-right: -22em;
+    padding-top: 15em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName1{
+    float:right;
+    margin-right: -39.3em;
+    padding-top: 30em;
+    color:grey;
+}
+
+.genre1{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 19em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName1{
+    float:right;
+    margin-right: -47.4em;
+    padding-top: 37.5em;
+    color:grey;
+}
+/*//*/
+
+/*The Irishman*/
+.irish img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.irish img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#pForIrish{
+    float:right;
+    margin-right: -5em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForIrish2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+#irishman{
+    float:right;
+    margin-right: 16em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+#infoForIrish{
+    font-family: Icon;
+    float:right;
+    margin-right: 0;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForIrish{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForIrish:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForIrish:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#irishBlur{
+    filter: blur(0.5em);
+    background:url(../images/irish.jpg) no-repeat center center fixed;
+    margin:1em;
+}
+
+.starring2{
+    float:right;
+    margin-right: -22em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors2{
+    float:right;
+    margin-right: -52em;
+    padding-top: 12em;
+    color:grey;
+}
+
+.director2{
+    float:right;
+    margin-right: -22em;
+    padding-top: 9em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName2{
+    float:right;
+    margin-right: -43em;
+    padding-top: 19em;
+    color:grey;
+}
+
+.genre2{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 13em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName2{
+    float:right;
+    margin-right: -47.7em;
+    padding-top: 26em;
+    color:grey;
+}
+
+
+/*//*/
+
+/*Your Name*/
+.yourName img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+    padding-top: 6em;
+}
+
+#pForKimi{
+    float:right;
+    margin-right: -5em;
+    padding-top: 6em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForKimi2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 15em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+.yourName img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#infoForKimi{
+    font-family: Icon;
+    float:right;
+    margin-right: -1em;
+    padding-top: 9em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForKimi{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 9em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForKimi:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForKimi:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#yourNameBlur{
+    filter: blur(0.5em);
+    background:url(../images/yourName2.jpg) no-repeat center center fixed;
+    margin:1em;
+}
+
+.starring3{
+    float:right;
+    margin-right: -22em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors3{
+    float:right;
+    margin-right: -58em;
+    padding-top: 12em;
+    color:grey;
+}
+
+.director3{
+    float:right;
+    margin-right: -22em;
+    padding-top: 9em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName3{
+    float:right;
+    margin-right: -49em;
+    padding-top: 19em;
+    color:grey;
+}
+
+.genre3{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 13em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName3{
+    float:right;
+    margin-right: -52em;
+    padding-top: 26em;
+    color:grey;
+}
+/*//*/
+
+/*The Addams Family*/
+
+#addamsFamily img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#addamsFamily img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+#pForAddams{
+    float:right;
+    margin-right: -5em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForAddams2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+#addams{
+    float:right;
+    margin-right: 13em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+#infoForAddams{
+    font-family: Icon;
+    float:right;
+    margin-right: 0;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForAddams{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForAddams:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForAddams:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.descriptionA{
+    float:right;
+    margin-right: -6em;
+    padding-top: 11em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName4{
+    float:right;
+    margin-right: -48em;
+    padding-top: 26em;
+    color:grey;
+}
+
+#addamsBlur{
+    filter: blur(0.5em);
+    background:url(../images/addamsfamily2.jpg) no-repeat center center fixed;
+    margin:1em;
+}
+
+
+/*//*/
+
+/*Joker*/
+#joker img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#joker img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+#pForJoker{
+    float:right;
+    margin-right: -4em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForJoker2{
+    float:right;
+    margin-right: -3em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+#joke{
+    float:right;
+    margin-right: 17em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+#infoForJoker{
+    font-family: Icon;
+    float:right;
+    margin-right: 2em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForJoker{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForJoker:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForJoker:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.descriptionJ{
+    float:right;
+    margin-right: -0.3em;
+    padding-top: 11em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName4{
+    float:right;
+    margin-right: -48em;
+    padding-top: 26em;
+    color:grey;
+}
+
+#jokerBlur{
+    filter: blur(0.5em);
+    background:url(../images/joker2.jpg) no-repeat center center fixed;
+    margin:1em;
+}
+
+#pForTheJoker{
+    float:right;
+    margin-right: -3em;
+    padding-top: 6em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForTheJoker2{
+    float:right;
+    margin-right: -3em;
+    padding-top: 15em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+.starring4{
+    float:right;
+    margin-right: -22em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors4{
+    float:right;
+    margin-right: -56em;
+    padding-top: 12em;
+    color:grey;
+}
+
+.director4{
+    float:right;
+    margin-right: -22em;
+    padding-top: 9em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName4{
+    float:right;
+    margin-right: -41em;
+    padding-top: 19em;
+    color:grey;
+}
+
+.genre4{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 13em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName5{
+    float:right;
+    margin-right: -42em;
+    padding-top: 26em;
+    color:grey;
+}
+/*//*/
+
+
+/*The Good Liar*/
+#liar img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#liar img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+#pForLiar{
+    float:right;
+    margin-right: -4em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForLiar2{
+    float:right;
+    margin-right: -3em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+#lie{
+    float:right;
+    margin-right: 15em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+#infoForLiar{
+    font-family: Icon;
+    float:right;
+    margin-right: 0em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForLiar{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForLiar:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForLiar:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#liarBlur{
+    filter: blur(0.5em);
+    background:url(../images/liar.jpg) no-repeat center center fixed;
+    margin:1em;
+}
+
+.starring3{
+    float:right;
+    margin-right: -22em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors4{
+    float:right;
+    margin-right: -54em;
+    padding-top: 12em;
+    color:grey;
+}
+
+.director3{
+    float:right;
+    margin-right: -22em;
+    padding-top: 9em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName4{
+    float:right;
+    margin-right: -40.5em;
+    padding-top: 19em;
+    color:grey;
+}
+
+.genre3{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 13em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName4{
+    float:right;
+    margin-right: -49.5em;
+    padding-top: 26em;
+    color:grey;
+}
+/*//*/
+
+/*DDLJ*/
+
+#ddlj img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#ddlj img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#pForDdlj{
+    float:right;
+    margin-right: -5em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForDdlj2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+#dilwale{
+    float:right;
+    margin-right: 10em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+#infoForDdlj{
+    font-family: Icon;
+    float:right;
+    margin-right: -0.6em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForDdlj{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForDdlj:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForDdlj:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#ddljBlur{
+    filter: blur(0.5em);
+    background:url(../images/ddlj2.jpg) no-repeat center center fixed;
+    margin:1em;
+}
+
+.description3{
+    float:right;
+    margin-right: 21.3em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.starring3{
+    float:right;
+    margin-right: -22em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors6{
+    float:right;
+    margin-right: -46em;
+    padding-top: 12em;
+    color:grey;
+}
+
+.director3{
+    float:right;
+    margin-right: -22em;
+    padding-top: 9em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName6{
+    float:right;
+    margin-right: -42em;
+    padding-top: 19em;
+    color:grey;
+}
+
+.genre2{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 13em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName2{
+    float:right;
+    margin-right: -47.7em;
+    padding-top: 26em;
+    color:grey;
+}
+
+.dilDul img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 5em;
+    width: 15em; 
+}
+
+.dilDul img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#forDilDul{
+    float:right;
+    margin-right: 10em;
+    padding-top: 5em;
+    font-family: fantasy;
+}
+
+#pForDilDul{
+    float:right;
+    margin-right: -5em;
+    padding-top: 6em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForDilDul2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 15em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+/*//*/
+
+/*Home Alone*/
+#alone img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#alone img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#pForAlone{
+    float:right;
+    margin-right: -5em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForAlone2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+#home{
+    float:right;
+    margin-right: 16em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+#infoForAlone{
+    font-family: Icon;
+    float:right;
+    margin-right: 0;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForAlone{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForAlone:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForAlone:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#aloneBlur{
+    filter: blur(0.5em);
+    background:url(../images/alone2.jpg) no-repeat center center fixed;
+    margin:1em;
+    height: 25em;
+}
+
+.starring2{
+    float:right;
+    margin-right: -22em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors9{
+    float:right;
+    margin-right: -53.5em;
+    padding-top: 12em;
+    color:grey;
+}
+
+.director2{
+    float:right;
+    margin-right: -22em;
+    padding-top: 9em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName9{
+    float:right;
+    margin-right: -42em;
+    padding-top: 19em;
+    color:grey;
+}
+
+.genre2{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 13em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName9{
+    float:right;
+    margin-right: -39.1em;
+    padding-top: 26em;
+    color:grey;
+}
+/*//*/
+
+/*Andre*/
+#andre img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#andre img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#pForAndre{
+    float:right;
+    margin-right: -5em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForAndre2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+.dre{
+    float:right;
+    margin-right: 10em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+.forDre{
+    float:right;
+    margin-right: 10em;
+    padding-top: 5em;
+    font-family: fantasy;
+}
+
+#infoForAndre{
+    font-family: Icon;
+    float:right;
+    margin-right: 0;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#trailerForAndre{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:grey;
+}
+
+#infoForAndre:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForAndre:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#andreBlur{
+    filter: blur(0.5em);
+    background:url(../images/andre2.jpg) no-repeat center center fixed;
+    margin:1em;
+}
+
+.genre7{
+    float:right;
+    margin-right: -22.1em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName7{
+    float:right;
+    margin-right: -39.5em;
+    padding-top: 12em;
+    color:grey;
+}
+/*//*/
+
+/*Les Mes*/
+#lesMes img{
+    height: 20em;
+    padding-left: 10em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#lesMes img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#pForLesMes{
+    float:right;
+    margin-right: -5em;
+    padding-top: 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+#pForLesMes2{
+    float:right;
+    margin-right: -5em;
+    padding-top: 7em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color:grey;
+}
+
+#mes{
+    float:right;
+    margin-right: 4em;
+    padding-top: 1em;
+    font-family: fantasy;
+}
+
+#infoForLesMes{
+    font-family: Icon;
+    float:right;
+    margin-right: 0;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:red;
+}
+
+#trailerForLesMes{
+    font-family: Icon;
+    float:right;
+    margin-right: -5em;
+    padding-top: 4.5em;
+    font-size: 1.7em;
+    color:red;
+}
+
+#infoForLesMes:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#trailerForLesMes:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#lesMesBlur{
+    filter: blur(0.3em);
+    background:url(../images/lesMes2.jpeg) no-repeat center center fixed;
+    margin:1em;
+}
+
+.starring2{
+    float:right;
+    margin-right: -22em;
+    padding-top: 5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.actors8{
+    float:right;
+    margin-right: -55em;
+    padding-top: 12em;
+    color:grey;
+}
+
+.director2{
+    float:right;
+    margin-right: -22em;
+    padding-top: 9em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.directorName8{
+    float:right;
+    margin-right: -45em;
+    padding-top: 19em;
+    color:grey;
+}
+
+.genre2{
+    float:right;
+    margin-right: -21.4em;
+    padding-top: 13em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+}
+
+.genreName8{
+    float:right;
+    margin-right: -38.7em;
+    padding-top: 26em;
+    color:grey;
+}
+
+#forLesMes{
+    float:right;
+    margin-right: 4em;
+    padding-top: 5em;
+    font-family: fantasy;
+}
+/*//*/
+
+.random{
+    background-color:black;
+    margin:1em;
+}
+
+.nothing{
+    height:5em;
+}
+
+h1{
+    float:right;
+    margin-right: 16em;
+    padding-top: 5em;
+    font-family: fantasy;
+}
+
+
+
+
+@font-face{
+    font-family:Stars;
+    src:url(../fonts/Stars.ttf)
+}
+
+@font-face{
+    font-family:Icon;
+    src:url(../fonts/Icon.ttf)
+}
+
+.extra img{
+    height: 17em;
+    padding-left: -.51em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 12em;
+    margin-top: 5em;
+}
+
+.extra{
+    background-color: lightgray;
+    height:20em;
+    padding-bottom: 5em;
+    margin:1em;
+    margin-top: 45em;
+}
+
+.extra{
+    background-color: lightgray;
+    height:20em;
+    padding-bottom: 5em;
+    margin:1em;
+    margin-top: 45em;
+}
+
+
+.alsoShowing{
+    font-family: fantasy;
+    margin-left: 3em;
+    float: left;
+    font-size: 1.5em;
+}
+
+.extra img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.extra1 img{
+    height: 17em;
+    padding-left: -.51em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 12em;
+    margin-top: 5em;
+}
+
+.extra1{
+    background-color: lightgray;
+    height:20em;
+    padding-bottom: 5em;
+    margin:1em;
+    margin-top: 45em;
+}
+
+.extra1{
+    background-color: lightgray;
+    height:20em;
+    padding-bottom: 5em;
+    margin:1em;
+    margin-top: 25em;
+}
+
+.extra1 img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.loginbox{
+    width: 20em;
+    height: 32em;
+    background: #000;
+    color: #fff;
+    top: 127%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h6{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: white;
+    color: red;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 25px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: red;
+}
+
+.req{
+    color:red;
+}
+
+.loginbox input[type="reset"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="reset"]:hover
+{
+    cursor: pointer;
+    background: white;
+    color: red;
+}
+
+
+.cinemaSeats{
+    background:url(../images/cinemaSeats.jpg) no-repeat center center fixed;
+    margin:1em;
+    background-size: 100em;
+    height: 20em;
+}
+
+.forLogin{
+    float:right;
+    margin-right: 20em;
+    font-family: fantasy;
+    color: red;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.login{
+    float:right;
+    margin-right: -13em;
+    font-family: fantasy;
+    color: red;
+    text-transform: uppercase; 
+    padding-top: 17em;
+}
+
+/*.socials{
+    text-align: center;
+    background-color: black;
+    width: 97.8%;
+    right: 0;
+    height: 6em;
+    margin-left: 1em;*/
+
+.socials{
+  position: relative;
+  width: 100%;
+  top: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin-top: 10em;
+}
+.contact-method{
+  width: 220px;
+  height: 140px;
+  display: inline-block;
+  background: #3498db;
+  margin: 10px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.contact-method i{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  line-height: 140px;
+  background: red;
+  z-index: 1;
+  transition: transform 0.6s;
+}
+.contact-method span{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0;
+}
+
+.contact-method:hover i{
+  transform: translateY(-40px);
+}
+
+.icons{
+    list-style: none;
+    padding: 1.5em;
+    display: inline-block;
+    position: relative;
+    border-radius:50%;
+    transition: .5s; 
+    color:pink;
+}
+
+.background{
+    background:url(../images/loginBackground.jpg) no-repeat center center fixed;
+    background-size: 80em;
+    height: 39em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.people{
+    background:url(../images/people.jpg) no-repeat center center fixed;
+    background-size: 80em;
+    height: 30em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+.peopleEating{
+    float:right;
+    margin-right: 18em;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding-top: 10em;
+}
+
+.food{
+    background:url(../images/food.jfif) no-repeat center center fixed;
+    background-size: 80em;
+    height: 20em;
+    opacity: 0.8;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.food1{
+    float:right;
+    margin-right: 18em;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+.forFood{
+    float:right;
+    margin-right: 20em;
+    padding-top: 3em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    padding-right: 15em;
+}
+
+.starWars{
+    background:black;
+    background-size: 80em;
+    height: 30em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.starWars img{
+    height: 25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 45em;
+}
+
+.popcorn{
+    float:right;
+    margin-right: 1em;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+.forPopcorn{
+  float:right;
+    margin-left: 20em;
+    padding-top: 1em;
+    margin-top: -15em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    padding-left: 12em;
+}
+
+.drink{
+    background:black;
+    background-size: 80em;
+    height: 30em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.drink img{
+    height: 25em;
+    padding-left: 45em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 30em;
+}
+
+.theDrink{
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    bottom: 18em;
+    position: relative;
+    right: 17em;
+  
+}
+
+.forDrink{
+    text-transform: uppercase;
+    bottom: 12em;
+    position: relative;
+    right: -1.4em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.foodPromo{
+    background:black;
+    background-size: 80em;
+    height:30em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+
+.foodPromo img{
+    height: 25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 30em;
+    position: relative;
+    bottom: 10em;
+}
+
+.theFoodPromo{
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    bottom: 10em;
+    position: relative;
+    left: 10em;
+  
+}
+
+.forFoodPromo{
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    float:right;
+    margin-left: 28em;
+    padding-top: 1em;
+    margin-top: -20em;
+}
+
+.placehold{
+    width:97.5%;
+    height:35em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display:grid;
+    position: relative;
+    bottom: 8em;
+    grid-template-columns:33.3% 33.3% 33.3%;
+    background: linear-gradient(-45deg, black, #081033, #0C194D);
+    background-size: 150%;
+    animation: animation 5s infinite alternate;
+}
+
+@keyframes animation{
+    0%{
+        background-position:left;
+    }
+     100%{
+        background-position:right;
+    }
+}
+
+#fancyFood{
+    height: 15em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 2.5em;
+    margin-right: 1.5em;
+}
+
+#fancyPopcorn{
+        height: 15em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 2.5em;
+}
+
+#beer{
+        height: 15em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 2.5em;
+}
+
+.titleForFood{
+        font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+/*    bottom: 10em;*/
+/*    position: relative;*/
+    margin-left: 2.5em;
+}
+
+.titleForBeer{
+        font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+/*    bottom: 10em;*/
+/*    position: relative;*/
+    margin-left: 1em;
+}
+
+.titleForPopcorn{
+        font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+/*    bottom: 10em;*/
+/*    position: relative;*/
+    margin-left: 1em;
+}
+
+.wordsForFood{
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+/*    bottom: 10em;*/
+/*    position: relative;*/
+    margin-left: 3.5em;
+}
+
+.wordsForBeer{
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+/*    bottom: 10em;*/
+/*    position: relative;*/
+    margin-left: 1.4em;
+}
+
+.wordsForPopcorn{
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+/*    bottom: 10em;*/
+/*    position: relative;*/
+    margin-left: 1.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.theNews{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans",sans-serif;
+}
+
+index{
+  background: #786fa6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter{
+  background: linear-gradient(125deg,#778beb,#f8a5c2);
+  width: 500px;
+  padding: 60px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  text-align: center;
+  box-shadow: 0 0 20px #000060;
+  
+  
+}
+
+#forNewsletter{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 48px;
+  line-height: 40px;
+}
+
+.newsletter p{
+  color: #fff;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.txtb{
+  width: 100%;
+  height: 70px;
+  background: #f1f1f1;
+  border-radius: 40px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.txtb input{
+  width: 100%;
+  height: 70px;
+  border-radius: 40px;
+  border: 0;
+  background: none;
+  padding: 0 30px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 80px;
+}
+
+.txtb button{
+  background: #574b90;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+.txtb button:hover{
+  opacity: .5;
+}
+
+.divider{
+    background-color: red;
+    height: 0.2em;
+    margin-top: 0.5em;
+    width: 90%;
+}
+
+
+a.popup:target { display: block; }
+
+a.popup:target + div.popup { display: block; }
+
+a.popup 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: default;
+}
+
+div.popup 
+{
+    display: none;
+    background: black;
+    width: 640px;
+    height: 480px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -240px;
+    z-index: 4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+div.popup > a.close 
+{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+}
+
+div.popup > a.close.word {
+    top: 100%;
+    margin-top: 5px;
+}
+
+div.popup > a.close.x {
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+#pvideo
+{
+    height: 20em;
+}
+ 
+.button 
+{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+
+a.formpopup:target { display: block; }
+
+a.formpopup:target + div.formpopup { display: block; }
+
+a.formpopup 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: default;
+}
+
+div.formpopup 
+{
+    display: none;
+    background: linear-gradient(-45deg, black, #A60808, #BF3434);
+    animation: animation 5s infinite alternate;
+    width: 640px;
+    height: 840px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -240px;
+    z-index: 4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+div.formpopup > a.close 
+{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+}
+
+div.formpopup > a.close.word {
+    top: 100%;
+    margin-top: 5px;
+}
+
+div.formpopup > a.close.x {
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+/*h1
+{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}*/
+
+.book{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.forPopup
+{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.forBooking
+{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.payment
+{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.register
+{
+    background: black;
+    width: 500px;
+    margin: 0px 0px 0px 430px;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#register
+{
+    margin-left: 0px;
+}
+
+label
+{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#name
+{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#ph
+{
+    width: 65px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#num
+{
+    width: 230px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#sub, #res
+{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#payment img
+{
+    height: 2em;
+}
+#thankyou 
+{
+ font-size: 2em;
+ text-align: center;
+ color: red;
+}
+
+.bgimg  
+{
+  background: url(../images/badboys.png); 
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  height: 350px;
+  width: 60%;
+  margin: auto;
+}
+
+/* Position text in the top-left corner */
+.topleft 
+{
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft 
+{
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3em;
+}
+
+/* Style the <hr> element */
+hr 
+{
+  margin: auto;
+  width: 40%;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+   background: url(../images/badBoys3.png) no-repeat center;
+}
+
+.slide:nth-child(2) {
+  background: url(../images/badBoys2.jpg)no-repeat center; 
+}
+
+.slide:nth-child(3) {
+  background: url(../images/badBoys4.jpg) no-repeat center; 
+}
+
+.slide:nth-child(4) {
+ background: url(../images/badboys.png)no-repeat center; 
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+#demo{
+    margin-top: 28em;
+    font-family: 'Bowlby One SC', cursive;
+    background-color: black;
+}
+
+#forComingSoon{
+      margin-top: 29em;
+    font-family: 'Bowlby One SC', cursive;
+    background-color: black;
+}
+
+.tab {
+ overflow: hidden;
+ border: 1px solid #BF3434;
+ background-color: #BF3434;
+ margin-top: 1.5em;
+ width: 90%;
+		}
+
+		/* Style the buttons that are used to open the tab content */
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+color: white;
+font: 600 16px Lato, sans-serif;
+		}
+
+		/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: #A60808;
+		}
+
+		/* Create an active/current tablink class */
+.tab button.active {
+ background-color: #590202;
+		}
+
+		/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+ border: 1px solid #BF3434;
+ border-top: none;
+ height: 35em;
+ width: 90%;
+		}
+                
+#topFilms img{
+    margin-top: 2.5em;
+    height: 25em;  
+    width: 15em;
+    margin-left: 4.5em;
+ }
+ 
+ #newReleases img{
+    height: 16em;  
+    width: 12em;
+    margin-left: 1.5em;
+ }
+ 
+ #topFilms img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#newReleases img:hover
+{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#topFilms input{
+  width: 100%;
+  height: 70px;
+  border-radius: 40px;
+  border: 0;
+  background: none;
+  padding: 0 30px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 80px;
+}
+
+#topFilms button{
+  background: #BF3434;
+  border: 0;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  top: 14%;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+#topFilms button:hover{
+  opacity: .5;
+}
+
+#highestRated img{
+    margin-top: 2.5em;
+    height: 25em;  
+    width: 15em;
+    margin-left: 4.5em;
+ }
+ 
+ #highestRated input{
+  width: 100%;
+  height: 70px;
+  border-radius: 40px;
+  border: 0;
+  background: none;
+  padding: 0 30px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 80px;
+}
+
+#highestRated button{
+  background: #BF3434;
+  border: 0;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  top: 14%;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+#highestRated button:hover{
+  opacity: .5;
+}
+
+#newReleases img{
+    margin-top: 2.5em;
+    height: 25em;  
+    width: 15em;
+    margin-left: 4.5em;
+ }
+ 
+  #newReleases input{
+  width: 100%;
+  height: 70px;
+  border-radius: 40px;
+  border: 0;
+  background: none;
+  padding: 0 30px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 80px;
+}
+
+#newReleases button{
+  background: #BF3434;
+  border: 0;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  top: 14%;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+#newReleases button:hover{
+  opacity: .5;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: red;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+
+a:visited{
+   color:white;
+   text-decoration: none; 
+}
+
+a.newspopup:target { display: block; }
+
+a.newspopup:target + div.newspopup { display: block; }
+
+a.newspopup 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: default;
+}
+
+div.newspopup 
+{
+    display: none;
+    background: black;
+    width: 640px;
+    height: 480px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -240px;
+    z-index: 4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+div.newspopup > a.close 
+{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+}
+
+div.newspopup > a.close.word {
+    top: 100%;
+    margin-top: 5px;
+}
+
+div.newspopup > a.close.x {
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+a.newsformpopup:target { display: block; }
+
+a.newsformpopup:target + div.newsformpopup { display: block; }
+
+a.newsformpopup 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: default;
+}
+
+div.newsformpopup 
+{
+    display: none;
+    background: purple;
+    animation: animation 5s infinite alternate;
+    width: 640px;
+    height: 640px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -240px;
+    z-index: 4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+div.newsformpopup > a.close 
+{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+}
+
+div.newsformpopup > a.close.word {
+    top: 100%;
+    margin-top: 5px;
+}
+
+div.newsformpopup > a.close.x {
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+#forSlideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.forSlide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.forSlide {
+  float: left;
+  height: 451px;
+  width: 728px;
+}
+
+.forSlide:nth-child(1) {
+  background-image:url(../images/cinemapic.jpg);
+  background-size: 50em;
+}
+
+.forSlide:nth-child(2) {
+  background-image:url(../images/homealonepic.jpg);
+  background-size: 50em;
+}
+
+.forSlide:nth-child(3) {
+  background-image:url(../images/jokerpic.jpg);
+  background-size: 50em;
+}
+
+.forSlide:nth-child(4) {
+  background-image:url(../images/bbpic.jpg);
+  background-size: 50em;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
